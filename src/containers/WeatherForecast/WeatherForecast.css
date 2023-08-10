@@ -1,0 +1,22 @@
+.weatherforecast {
+  background-color: aliceblue;
+  width: 300px;
+  height: 600px;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 180px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.high_low_temperature {
+  display: flex;
+  gap: 5px;
+  margin-left: 46px;
+  font-size: 24px;
+}
+
+.temperature {
+  font-size: 100px;
+  margin-left: 30px;
+}

@@ -1,0 +1,12 @@
+.clothes {
+  display: flex;
+  margin-top: -60px;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+.clothes > img {
+  width: 220px;
+  height: 360px;
+  pointer-events: none;
+}
