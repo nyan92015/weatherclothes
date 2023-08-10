@@ -2,7 +2,7 @@ import React from "react";
 import Body1 from "../../containers/Body1";
 import Body2 from "../../containers/Body2";
 
-const Homepage = () => {
+const Home = () => {
   return (
     <div>
       <Body1 />
@@ -11,4 +11,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Home;
