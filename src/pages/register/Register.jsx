@@ -27,6 +27,20 @@ export default function Register() {
             console.error("An error occurred:", error);
         }
     };
+
+
+    const handleSignIn = async () => {
+      try {
+          const response = await axios.post("http://localhost:3000/api/v1/login", {
+              username: username,
+              password: password
+          });
+
+      } catch (error) {
+          // エラーハンドリング
+          console.error("An error occurred:", error);
+      }
+  };
   return (
     <React.Fragment>
       <div className="title">WeatherClothes</div>
@@ -64,7 +78,12 @@ export default function Register() {
                 <label htmlFor="check"><span className="icon"></span> Keep me Signed in</label>
               </div>
               <div className="group">
-                <input type="submit" className="button" value="Sign In" />
+                <input 
+                  type="submit" 
+                  className="button" 
+                  value="Sign In" 
+                  onClick={handleSignIn} 
+                />
               </div>
               <div className="hr"></div>
               <div className="foot-lnk">
