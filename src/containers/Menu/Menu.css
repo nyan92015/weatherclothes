@@ -8,7 +8,7 @@
   width: 80px;
   justify-content: center;
   align-items: center;
-  z-index: 90;
+  z-index: 1000000;
 }
 
 .menu-btn span,
@@ -35,10 +35,12 @@
 #menu-btn-check:checked ~ .menu-btn span::before {
   bottom: 0;
   transform: rotate(45deg);
+  background-color: #58c9f4;
 }
 #menu-btn-check:checked ~ .menu-btn span::after {
   top: 0;
   transform: rotate(-45deg);
+  background-color: #58c9f4;
 }
 
 #menu-btn-check {
