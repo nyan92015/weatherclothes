@@ -7,6 +7,7 @@ export const getWeather = async (postalCode) => {
 
   try {
     const weatherData = await axios.get(apiUrl);
+    console.log(weatherData.data);
     return weatherData.data;
   } catch (error) {
     console.error("Error fetching weather data:", error);

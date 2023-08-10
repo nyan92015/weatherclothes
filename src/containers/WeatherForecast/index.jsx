@@ -2,19 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./WeatherForecast.css";
 import { getWeather } from "../../openWheatherMap/getWeather";
 import Date from "../../components/Date";
-const WeatherForecast = () => {
-  const [weatherData, setWeatherData] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await getWeather("123-0851");
-      setWeatherData(data);
-      setIsLoading(false);
-    };
-
-    fetchData();
-  }, []);
+const WeatherForecast = ({ weatherData, isLoading }) => {
   if (isLoading) return <div>Loading</div>;
 
   return (
