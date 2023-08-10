@@ -15,12 +15,16 @@ export default function Register() {
         setPassword(event.target.value);
     };
 
+    const navigate = useNavigate();
+
     const handleSignUp = async () => {
         try {
             const response = await axios.post("http://localhost:3000/api/v1/register", {
                 username: username,
                 password: password
             });
+
+            navigate("/home");
 
         } catch (error) {
             // エラーハンドリング
@@ -35,7 +39,7 @@ export default function Register() {
               username: username,
               password: password
           });
-
+          navigate("/home");
       } catch (error) {
           // エラーハンドリング
           console.error("An error occurred:", error);
