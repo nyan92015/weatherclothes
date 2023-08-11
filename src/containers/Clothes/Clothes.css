@@ -5,7 +5,7 @@
   width: 700px;
 }
 
-.clothes > div > img {
+.clothes > img {
   width: 220px;
   height: 360px;
   pointer-events: none;

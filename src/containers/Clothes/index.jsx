@@ -9,7 +9,7 @@ const Clothes = ({ weatherData }) => {
   const A = 1.76 + 1.4 * Math.pow(v, 0.75);
   const Tm =
     37 - (37 - t) / (0.68 - 0.0014 * h + 1 / A) - 0.29 * t * (1 - h / 100);
-
+    
   return (
     <div class="clothes">
       {Tm < 10 && (

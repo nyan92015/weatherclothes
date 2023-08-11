@@ -10,13 +10,13 @@ const Menu = () => {
       <div class="menu-content">
         <ul>
           <li>
-            <a href="#">メニューリンク1</a>
+            <a href="#">proposal</a>
           </li>
           <li>
-            <a href="#">メニューリンク2</a>
+            <a href="#">history</a>
           </li>
           <li>
-            <a href="#">メニューリンク3</a>
+            <a href="#">share</a>
           </li>
         </ul>
         <button id="login" class="login">

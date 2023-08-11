@@ -1,9 +1,11 @@
 .title {
   width: 130px;
   height: 20px;
-  margin: 3% 0px 0px 4%;
+  margin: 4% 0px 0px 4%;
   font-weight: bold;
   font-family: "Impact";
   color: aliceblue;
   font-size: 30px;
+  position: fixed;
+  animation: fadeIn 3s ease 1s 1 normal backwards;
 }
