@@ -91,6 +91,7 @@ a {
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
+  z-index: 2;
 }
 .login-form .group {
   margin-bottom: 15px;
@@ -199,6 +200,7 @@ a {
   width: 99vw;
   height: 50vh;
   opacity: 0.8;
+  z-index: 1;
 }
 
 .post {

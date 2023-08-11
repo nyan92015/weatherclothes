@@ -6,6 +6,8 @@ import "./Register.css";
 export default function Register() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [post, setPost] = useState('');
 
     const handleUsernameChange = (event) => {
         setUsername(event.target.value);
@@ -14,6 +16,16 @@ export default function Register() {
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
+
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
+    };
+
+    const handlePostChange = (event) => {
+        setPost(event.target.value);
+    }
+
+
 
     const navigate = useNavigate();
 
@@ -31,7 +43,6 @@ export default function Register() {
             console.error("An error occurred:", error);
         }
     };
-
 
     const handleSignIn = async () => {
       try {
@@ -125,6 +136,31 @@ export default function Register() {
                   data-type="password" 
                 />
               </div>
+              <div className="group">
+                <label htmlFor="email" className="label">Email</label>
+                <input 
+                  id="email" 
+                  type="email" 
+                  className="input" 
+                  data-type="email" 
+                  value={email}
+                  onChange={handleEmailChange}
+                />
+              </div>
+              <div className="group">
+                <label htmlFor="post" className="label">Post number</label>
+                <input 
+                  id="post" 
+                  type="text" 
+                  pattern="\d{3}-?\d{4}"
+                  className="input" 
+                  placeholder="123-4567"
+                  data-type="post" 
+                  value={post}
+                  onChange={handlePostChange}
+                />
+              </div>
+              
               <div className="group">
                 <input 
                   type="submit" 
