@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./WeatherForecast.css";
 import { getWeather } from "../../openWheatherMap/getWeather";
 import Date from "../../components/Date";
-const WeatherForecast = ({ weatherData, isLoading }) => {
-  if (isLoading) return <div>Loading</div>;
-
+const WeatherForecast = ({ weatherData }) => {
   return (
     <div class="weatherforecast">
       <Date />

@@ -18,11 +18,13 @@ const Body2 = () => {
     fetchData();
   }, []);
 
+  if (isLoading) return <div>Loading</div>;
+
   return (
     <div class="body2">
-      <WeatherForecast weatherData={weatherData} isLoading={isLoading} />
+      <WeatherForecast weatherData={weatherData} />
       <img src="person.png" class="person" />
-      <Clothes />
+      <Clothes weatherData={weatherData} />
     </div>
   );
 };
