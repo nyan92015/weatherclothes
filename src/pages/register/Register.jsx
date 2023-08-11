@@ -60,7 +60,7 @@ export default function Register() {
   };
   return (
     <React.Fragment>
-      <div className="title">WeatherClothes</div>
+      <div className="title2">WeatherClothes</div>
       <div className="login-wrap">
         <div className="login-html">
           <input
