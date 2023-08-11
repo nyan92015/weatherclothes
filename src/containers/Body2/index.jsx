@@ -10,7 +10,7 @@ const Body2 = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getWeather("123-0851");
+      const data = await getWeather("965-0816");
       setWeatherData(data);
       setIsLoading(false);
     };
