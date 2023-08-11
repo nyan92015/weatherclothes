@@ -33,7 +33,9 @@ export default function Register() {
         try {
             const response = await axios.post("http://localhost:3000/api/v1/register", {
                 username: username,
-                password: password
+                password: password,
+                email: email,
+                post: post
             });
 
             navigate("/home");
